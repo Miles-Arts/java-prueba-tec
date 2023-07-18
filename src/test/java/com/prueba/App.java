@@ -45,7 +45,7 @@ public class App {
         /*String reverseTexto = new StringBuilder(text).reverse().toString();
         System.out.println(reverseTexto);*/
 
-        String[] jugandoTexto = text.split("");
+      /*  String[] jugandoTexto = text.split("");
         StringBuilder revertirTexto = new StringBuilder();
 
         for ( int i = jugandoTexto.length; i > 0; i--) {
@@ -53,11 +53,32 @@ public class App {
             revertirTexto.append(jugandoTexto[i - 1 ]);
 
             String mover = new StringBuilder(revertirTexto).reverse().toString();
+            String mover1 = new StringBuilder("Hola").reverse().toString();
 
             System.out.println(mover);
+            System.out.println(mover1);
 
         }
-        System.out.println(revertirTexto);
+        System.out.println(revertirTexto);*/
+
+       /* String[] juegoPalabras = text.split("");
+        StringBuilder imprimirPalabras = new StringBuilder();
+        StringBuilder imprimirPalabras1  = new StringBuilder();
+
+        String[] otroModo = juegoPalabras;
+        System.out.println(otroModo);
+
+        for ( int i = juegoPalabras.length; i > 0; i--) {
+
+            imprimirPalabras.append(juegoPalabras[i - 1]);
+            imprimirPalabras1.append(otroModo[i - 1]);
+
+            System.out.println(imprimirPalabras);
+        }
+        System.out.println(imprimirPalabras);
+        System.out.println("---");*/
+
+
 
     }
 
