@@ -22,20 +22,34 @@ public class App {
         System.out.println(newText);*/
 
 
-        String[] cadenaTexto = text.split("");
+   /*     String[] cadenaTexto = text.split("");
         StringBuilder nuevoTexto = new StringBuilder();
 
         for ( int i = cadenaTexto.length; i > 0; i-- ) {
 
             nuevoTexto.append(cadenaTexto[i - 1]);
 
-        } System.out.println(nuevoTexto);
+        } System.out.println(nuevoTexto);*/
+
+        /*String[] palabrasTexto = text.split("");
+        StringBuilder cadenaTexto = new StringBuilder();
+
+        for ( int i = palabrasTexto.length; i > 0; i --) {
+            cadenaTexto.append(palabrasTexto[i - 1]);
+        }
+        System.out.println(cadenaTexto);*/
+
+       /* String juegoTexto = new StringBuilder(text).reverse().toString();
+        System.out.println(juegoTexto);*/
+
+
+
     }
 
     public static void main(String[] args) {
 
         App app = new App();
-        app.m1InvertirString("aprender");
-
+        //app.m1InvertirString("aprender");
+        app.m1InvertirString("Ana y Otto");
     }
 }
