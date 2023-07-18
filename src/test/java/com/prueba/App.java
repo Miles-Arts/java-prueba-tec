@@ -42,7 +42,18 @@ public class App {
        /* String juegoTexto = new StringBuilder(text).reverse().toString();
         System.out.println(juegoTexto);*/
 
+        /*String reverseTexto = new StringBuilder(text).reverse().toString();
+        System.out.println(reverseTexto);*/
 
+        String[] jugandoTexto = text.split("");
+        StringBuilder revertirTexto = new StringBuilder();
+
+        for ( int i = jugandoTexto.length; i > 0; i--) {
+
+            revertirTexto.append(jugandoTexto[i - 1 ]);
+
+        }
+        System.out.println(revertirTexto);
 
     }
 
@@ -50,6 +61,6 @@ public class App {
 
         App app = new App();
         //app.m1InvertirString("aprender");
-        app.m1InvertirString("Ana y Otto");
+        app.m1InvertirString("Un bello paseo por el parque el campo");
     }
 }
