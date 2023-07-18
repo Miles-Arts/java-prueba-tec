@@ -52,6 +52,10 @@ public class App {
 
             revertirTexto.append(jugandoTexto[i - 1 ]);
 
+            String mover = new StringBuilder(revertirTexto).reverse().toString();
+
+            System.out.println(mover);
+
         }
         System.out.println(revertirTexto);
 
@@ -61,6 +65,6 @@ public class App {
 
         App app = new App();
         //app.m1InvertirString("aprender");
-        app.m1InvertirString("Un bello paseo por el parque el campo");
+        app.m1InvertirString("Amor");
     }
 }
