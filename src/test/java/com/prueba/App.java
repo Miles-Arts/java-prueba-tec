@@ -18,9 +18,18 @@ public class App {
 
         System.out.println(newText);*/
 
-        String newText = new StringBuilder(text).reverse().toString();
-        System.out.println(newText);
+      /*  String newText = new StringBuilder(text).reverse().toString();
+        System.out.println(newText);*/
 
+
+        String[] cadenaTexto = text.split("");
+        StringBuilder nuevoTexto = new StringBuilder();
+
+        for ( int i = cadenaTexto.length; i > 0; i-- ) {
+
+            nuevoTexto.append(cadenaTexto[i - 1]);
+
+        } System.out.println(nuevoTexto);
     }
 
     public static void main(String[] args) {
