@@ -7,7 +7,7 @@ public class App {
 
     //Invertir un String
     private void m1InvertirString(String text) {
-        String[] array = text.split("");
+     /*   String[] array = text.split("");
         StringBuilder newText = new StringBuilder();
 
         for ( int i = array.length; i > 0; i--) {
@@ -16,6 +16,9 @@ public class App {
 
         }
 
+        System.out.println(newText);*/
+
+        String newText = new StringBuilder(text).reverse().toString();
         System.out.println(newText);
 
     }
