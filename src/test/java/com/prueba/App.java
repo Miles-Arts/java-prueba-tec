@@ -174,7 +174,7 @@ public  class App {
             System.out.println("El número " + numeroInver + " no es Capicula");
         }*/
 
-    private void m2IsCapicua(int number) {
+    /*private void m2IsCapicua(int number) {
 
         String numeroTexto  = String.valueOf(number);
         String numeroATexto = new StringBuilder(numeroTexto).reverse().toString();
@@ -183,7 +183,31 @@ public  class App {
             System.out.println("El número " + numeroATexto + " es Capicua");
         } else {
             System.out.println("El número " + numeroATexto + " no es Capicua");
+        }*/
+
+    private void m2IsCapicua(int numeroLargo) {
+
+
+        String numeroATexto = String.valueOf(numeroLargo);
+        String numeroReverse = new StringBuilder(numeroATexto).reverse().toString();
+
+        if (numeroATexto.equals(numeroReverse)) {
+
+            System.out.println("El número " + numeroReverse + " es Capicula");
+        } else {
+            System.out.println("El número " + numeroReverse + " no es Capicua");
         }
+    }
+
+    private void m2IsCapicuas(int numeros) {
+
+        String numeroExtraño = String.valueOf(numeros);
+        String numerosTextos = new StringBuilder(numeroExtraño).reverse().toString();
+
+        if ( numeroExtraño.equals(numerosTextos)) {
+            System.out.println("El Capicua " + numerosTextos);
+        }
+        System.out.println("El Capicua " + numerosTextos);
 
     }
 
@@ -195,6 +219,7 @@ public  class App {
         //app.m1InvertirString("aprender");
         //app.m1InvertirString("La Estrategia del Caracol");
         app.m2IsCapicua(96869);
+        app.m2IsCapicuas(96869);
 
     }
 }
