@@ -128,6 +128,16 @@ public  class App {
         String invertirTexto = new StringBuilder(text).reverse().toString();
         System.out.println(invertirTexto);
 
+        String[] invertirPalabras = text.split("");
+        StringBuilder invertirCaracteres = new StringBuilder();
+
+        for ( int i = invertirPalabras.length; i > 0 ; i-- ) {
+
+            invertirCaracteres.append(invertirPalabras[i - 1]);
+
+        }
+        System.out.println(invertirCaracteres);
+
     }
 
    /* private void toUpperCase(String holas) {
@@ -137,6 +147,6 @@ public  class App {
 
         App app = new App();
         //app.m1InvertirString("aprender");
-        app.m1InvertirString("La Estrategía del Caracol");
+        app.m1InvertirString("La Estrategia del Caracol");
     }
 }
