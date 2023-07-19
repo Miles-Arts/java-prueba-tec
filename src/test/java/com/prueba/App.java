@@ -22,7 +22,7 @@ public  class App {
     }*/
 
     //Invertir un String
-    public static void m1InvertirString(String text) {
+//    public static void m1InvertirString(String text) {
      /*   String[] array = text.split("");
         StringBuilder newText = new StringBuilder();
 
@@ -129,7 +129,7 @@ public  class App {
         System.out.println(invertirTexto);*/
 
 //        String[] invertirPalabras = text.split(",\\s*");
-        String[] invertirPalabras = text.split("");
+ /*       String[] invertirPalabras = text.split("");
         StringBuilder invertirCaracteres = new StringBuilder();
 
         for ( int i = invertirPalabras.length; i > 0 ; i-- ) {
@@ -140,14 +140,22 @@ public  class App {
         System.out.println(invertirCaracteres);
 
     }
-
+*/
    /* private void toUpperCase(String holas) {
     }*/
+
+
+    private  void m2IsCapicua(int number) {
+
+    }
+
+
 
     public static void main(String[] args) {
 
         App app = new App();
         //app.m1InvertirString("aprender");
-        app.m1InvertirString("La Estrategia del Caracol");
+        //app.m1InvertirString("La Estrategia del Caracol");
+        app.m2IsCapicua("123");
     }
 }
