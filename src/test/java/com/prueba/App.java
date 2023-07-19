@@ -111,7 +111,7 @@ public  class App {
 
         System.out.println(holaGente);*/
 
-        String peliculaTexto = new StringBuilder(text).reverse().toString();
+      /*  String peliculaTexto = new StringBuilder(text).reverse().toString();
         System.out.println(peliculaTexto);
 
         String[] peliculaFull = text.split("");
@@ -122,9 +122,11 @@ public  class App {
             peliculaReverse.append(peliculaFull[i - 1]);
 
         }
-        System.out.println(peliculaReverse);
+        System.out.println(peliculaReverse);*/
 
 
+        String invertirTexto = new StringBuilder(text).reverse().toString();
+        System.out.println(invertirTexto);
 
     }
 
