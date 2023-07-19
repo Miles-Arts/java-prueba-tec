@@ -2,8 +2,21 @@ package com.prueba;
 
 import java.util.ArrayList;
 
+import static java.lang.Math.max;
+
 public class App {
 
+   /* private void numero(String[] args) {
+        int m = max(1,2);
+
+        if ( 1 > 2) {
+            m = 1;
+        } else {
+            m = 2;
+        }
+        System.out.println(m);
+
+    }*/
 
     //Invertir un String
     private void m1InvertirString(String text) {
@@ -79,6 +92,20 @@ public class App {
         System.out.println("---");*/
 
 
+        String holaMundo = new StringBuilder(text).reverse().toString();
+        System.out.println(holaMundo);
+
+        String[] holaPeople = text.split("");
+        StringBuilder holaGente = new StringBuilder();
+
+        for ( int i = holaPeople.length; i > 0; i-- ) {
+
+            holaGente.append(holaPeople[i - 1]);
+
+        }
+        System.out.println(holaGente);
+
+
 
     }
 
@@ -86,6 +113,6 @@ public class App {
 
         App app = new App();
         //app.m1InvertirString("aprender");
-        app.m1InvertirString("Amor");
+        app.m1InvertirString("AmorEsPerros");
     }
 }
