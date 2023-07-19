@@ -125,9 +125,10 @@ public  class App {
         System.out.println(peliculaReverse);*/
 
 
-        String invertirTexto = new StringBuilder(text).reverse().toString();
-        System.out.println(invertirTexto);
+    /*    String invertirTexto = new StringBuilder(text).reverse().toString();
+        System.out.println(invertirTexto);*/
 
+//        String[] invertirPalabras = text.split(",\\s*");
         String[] invertirPalabras = text.split("");
         StringBuilder invertirCaracteres = new StringBuilder();
 
