@@ -145,7 +145,7 @@ public  class App {
     }*/
 
 
-    private  void m2IsCapicua(int number) {
+/*    private  void m2IsCapicua(int number) {
 
         String numberText = String.valueOf(number);
         String reverseNumber = new StringBuilder(numberText).reverse().toString();
@@ -157,6 +157,20 @@ public  class App {
         } else {
             System.out.println("No es Capicula " + reverseNumber);
         }
+    }*/
+
+    private void m2IsCapicua(int number) {
+
+        String numeroATexto = String.valueOf(number);
+        String numeroReverse = new StringBuilder(numeroATexto).reverse().toString();
+
+        if ( numeroATexto.equals(numeroReverse) ) {
+            System.out.println("El número " + numeroReverse + " es Capicula");
+        } else {
+            System.out.println("El número " + numeroReverse + " no es Capicula");
+        }
+
+
     }
 
 
