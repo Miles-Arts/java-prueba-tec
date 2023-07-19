@@ -2,9 +2,12 @@ package com.prueba;
 
 import java.util.ArrayList;
 
+
 import static java.lang.Math.max;
 
-public class App {
+
+
+public  class App {
 
    /* private void numero(String[] args) {
         int m = max(1,2);
@@ -19,7 +22,7 @@ public class App {
     }*/
 
     //Invertir un String
-    private void m1InvertirString(String text) {
+    public static void m1InvertirString(String text) {
      /*   String[] array = text.split("");
         StringBuilder newText = new StringBuilder();
 
@@ -104,15 +107,18 @@ public class App {
 
         }
         System.out.println(holaGente);
-
+        System.out.println(holaMundo.toUpperCase());
 
 
     }
+
+   /* private void toUpperCase(String holas) {
+    }*/
 
     public static void main(String[] args) {
 
         App app = new App();
         //app.m1InvertirString("aprender");
-        app.m1InvertirString("AmorEsPerros");
+        app.m1InvertirString("A m o r E s P e r r o s ");
     }
 }
