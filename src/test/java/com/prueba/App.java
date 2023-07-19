@@ -147,6 +147,16 @@ public  class App {
 
     private  void m2IsCapicua(int number) {
 
+        String numberText = String.valueOf(number);
+        String reverseNumber = new StringBuilder(numberText).reverse().toString();
+
+        if ( numberText.equals(reverseNumber) ) {
+
+            System.out.println("Is Capicula " + reverseNumber);
+
+        } else {
+            System.out.println("No es Capicula " + reverseNumber);
+        }
     }
 
 
@@ -156,6 +166,6 @@ public  class App {
         App app = new App();
         //app.m1InvertirString("aprender");
         //app.m1InvertirString("La Estrategia del Caracol");
-        app.m2IsCapicua("123");
+        app.m2IsCapicua(96869);
     }
 }
