@@ -95,6 +95,7 @@ public  class App {
         System.out.println("---");*/
 
 
+      /*  String hola = "Que cuenta la gente bella";
         String holaMundo = new StringBuilder(text).reverse().toString();
         System.out.println(holaMundo);
 
@@ -106,8 +107,23 @@ public  class App {
             holaGente.append(holaPeople[i - 1]);
 
         }
-        System.out.println(holaGente);
-        System.out.println(holaMundo.toUpperCase());
+
+
+        System.out.println(holaGente);*/
+
+        String peliculaTexto = new StringBuilder(text).reverse().toString();
+        System.out.println(peliculaTexto);
+
+        String[] peliculaFull = text.split("");
+        StringBuilder  peliculaReverse = new StringBuilder();
+
+        for ( int i = peliculaFull.length; i > 0; i--) {
+
+            peliculaReverse.append(peliculaFull[i - 1]);
+
+        }
+        System.out.println(peliculaReverse);
+
 
 
     }
@@ -119,6 +135,6 @@ public  class App {
 
         App app = new App();
         //app.m1InvertirString("aprender");
-        app.m1InvertirString("A m o r E s P e r r o s ");
+        app.m1InvertirString("La Estrategía del Caracol");
     }
 }
