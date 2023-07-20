@@ -1,5 +1,7 @@
 package com.prueba;
 
+import org.jetbrains.annotations.NotNull;
+
 import java.util.ArrayList;
 
 
@@ -144,6 +146,34 @@ public  class App {
    /* private void toUpperCase(String holas) {
     }*/
 
+    /*private void  m1InvertirString(@NotNull String texto) {
+
+        String[] reverseTexto = texto.split("");
+        StringBuilder reverseNewTexto = new StringBuilder();
+
+        for ( int i = reverseTexto.length; i > 0; i -- ) {
+
+            reverseNewTexto.append(reverseTexto[i - 1]);
+            System.out.println(reverseNewTexto);
+        }
+    }*/
+
+    private void m1InvertirString(String letras) {
+
+        String[] palabrasTexto = letras.split("");
+        StringBuilder nuevasPalabrasTexto = new StringBuilder();
+
+        for ( int i = palabrasTexto.length; i > 0; i --) {
+
+            nuevasPalabrasTexto.append(palabrasTexto[i - 1]);
+        }    System.out.println(nuevasPalabrasTexto);
+    }
+
+
+    //CAPICUA
+    //CAPICUA
+    //CAPICUA
+    //CAPICUA
 
 /*    private  void m2IsCapicua(int number) {
 
@@ -185,7 +215,7 @@ public  class App {
             System.out.println("El número " + numeroATexto + " no es Capicua");
         }*/
 
-    private void m2IsCapicua(int numeroLargo) {
+ /*   private void m2IsCapicua(int numeroLargo) {
 
 
         String numeroATexto = String.valueOf(numeroLargo);
@@ -197,9 +227,9 @@ public  class App {
         } else {
             System.out.println("El número " + numeroReverse + " no es Capicua");
         }
-    }
+    }*/
 
-    private void m2IsCapicuas(int numeros) {
+   /* private void m2IsCapicuas(int numeros) {
 
         String numeroExtraño = String.valueOf(numeros);
         String numerosTextos = new StringBuilder(numeroExtraño).reverse().toString();
@@ -209,7 +239,22 @@ public  class App {
         }
         System.out.println("El Capicua " + numerosTextos);
 
-    }
+    }*/
+
+/*    private void m2IsCapicua(int numero) {
+        String numeroTexto = String.valueOf(numero);
+        String nuevoNumeroTexto = new StringBuilder(numeroTexto).reverse().toString();
+
+        if (numeroTexto.equals(nuevoNumeroTexto)) {
+            System.out.println("El numero es Capicua " + nuevoNumeroTexto);
+        } else {
+            System.out.println("El número no es Capícua " + nuevoNumeroTexto);
+        }
+
+    }*/
+
+    private
+
 
 
 
@@ -217,9 +262,10 @@ public  class App {
 
         App app = new App();
         //app.m1InvertirString("aprender");
-        //app.m1InvertirString("La Estrategia del Caracol");
+       // app.m1InvertirString("La Estrategia del Caracol");
+        app.m1InvertirString("El Oso come Miel");
         app.m2IsCapicua(96869);
-        app.m2IsCapicuas(96869);
+        //app.m2IsCapicuas(96869);
 
     }
 }
