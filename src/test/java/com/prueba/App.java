@@ -355,12 +355,30 @@ public  class App {
             /*counter[text.charAt(i)] = counter[text.charAt(i)] + 1;*/
             counter[text.charAt(i)]++;
         }
-        for (i = 0; i < 256; i ++ ) {
-            if ( counter[i] != 0) {
+        for (i = 0; i < 256; i++) {
+            if (counter[i] != 0) {
                 System.out.println((char) i + ": " + counter[i]);
             }
         }
+        System.out.println("-----");
     }
+
+
+    private void m4CountCharacterTimes(String texto) {
+            int i, lenght, counter[] = new  int [256];
+            lenght = texto.length();;
+
+            for ( i = 0;i < lenght; i++ ) {
+                counter[texto.charAt(i)] ++;
+            } for (i = 0; i < 256; i ++) {
+                if ( counter[i] != 0 ) {
+                    System.out.println((char) i + ": " + counter[i]);
+                }
+            }
+    }
+
+
+
 
     public static void main(String[] args) {
 
@@ -369,7 +387,8 @@ public  class App {
        // app.m1InvertirString("La Estrategia del Caracol");
         app.m1InvertirString("El Oso come Miel");
         app.m2IsCapicua(96869);
-        app.m3CountCharacterTimes("casa");
+        app.m3CountCharacterTimes("casacasa");
+        app.m4CountCharacterTimes("palabra");
 
     }
 }
