@@ -331,6 +331,7 @@ public  class App {
 
     }*/
 
+
     private void m2IsCapicua(int numero) {
 
         String numeroCapi = String.valueOf(numero);
@@ -343,7 +344,23 @@ public  class App {
         }
     }
 
+    //casa
+    //c=1, a=2, s=1,
 
+    private void m3CountCharacterTimes(String text) {
+        int i, lenght, counter[] = new int[256];
+        lenght = text.length();
+
+        for (i = 0; i < lenght; i++) {
+            /*counter[text.charAt(i)] = counter[text.charAt(i)] + 1;*/
+            counter[text.charAt(i)]++;
+        }
+        for (i = 0; i < 256; i ++ ) {
+            if ( counter[i] != 0) {
+                System.out.println((char) i + ": " + counter[i]);
+            }
+        }
+    }
 
     public static void main(String[] args) {
 
@@ -352,7 +369,7 @@ public  class App {
        // app.m1InvertirString("La Estrategia del Caracol");
         app.m1InvertirString("El Oso come Miel");
         app.m2IsCapicua(96869);
-        //app.m2IsCapicuas(96869);
+        app.m3CountCharacterTimes("casa");
 
     }
 }
