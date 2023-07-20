@@ -182,7 +182,7 @@ public  class App {
 
     }*/
 
-     private void m1InvertirString(String text) {
+     /*private void m1InvertirString(String text) {
 
          String[] textRe = text.split("");
          StringBuilder textReN = new StringBuilder();
@@ -192,7 +192,19 @@ public  class App {
              textReN.append(textRe[i - 1]);
          }
          System.out.println(textReN);
-     }
+     }*/
+
+    private void m1InvertirString(String palabras) {
+
+        String[] palabraTexto = palabras.split("");
+        StringBuilder palabraReverse = new StringBuilder();
+
+        for ( int i = palabraTexto.length; i > 0; i--) {
+
+            palabraReverse.append(palabraTexto[i - 1]);
+        }
+        System.out.println(palabraReverse);
+    }
 
 
     //CAPICUA
@@ -305,7 +317,7 @@ public  class App {
         }
     }*/
 
-    private void m2IsCapicua( int number ) {
+    /*private void m2IsCapicua( int number ) {
 
         String capicua1 = String.valueOf(number);
         String capicua2 = new StringBuilder(capicua1).reverse().toString();
@@ -317,6 +329,18 @@ public  class App {
             System.out.println("No Capicua");
         }
 
+    }*/
+
+    private void m2IsCapicua(int numero) {
+
+        String numeroCapi = String.valueOf(numero);
+        String numeroCua = new StringBuilder(numeroCapi).reverse().toString();
+
+        if ( numeroCapi.equals(numeroCua) ) {
+            System.out.println("Capicua");
+        } else {
+            System.out.println("No Capicua");
+        }
     }
 
 
