@@ -347,12 +347,12 @@ public  class App {
     //casa
     //c=1, a=2, s=1,
 
-    private void m3CountCharacterTimes(String text) {
+   /* private void m3CountCharacterTimes(String text) {
         int i, lenght, counter[] = new int[256];
         lenght = text.length();
 
         for (i = 0; i < lenght; i++) {
-            /*counter[text.charAt(i)] = counter[text.charAt(i)] + 1;*/
+            *//*counter[text.charAt(i)] = counter[text.charAt(i)] + 1;*//*
             counter[text.charAt(i)]++;
         }
         for (i = 0; i < 256; i++) {
@@ -361,10 +361,10 @@ public  class App {
             }
         }
         System.out.println("-----");
-    }
+    }*/
 
 
-    private void m4CountCharacterTimes(String texto) {
+    /*private void m4CountCharacterTimes(String texto) {
             int i, lenght, counter[] = new  int [256];
             lenght = texto.length();;
 
@@ -375,6 +375,19 @@ public  class App {
                     System.out.println((char) i + ": " + counter[i]);
                 }
             }
+    }*/
+
+    private void m4CountCharacterTimes(String frase) {
+       int  i, length, counter[] = new int [256];
+       length = frase.length();
+
+       for ( i = 0; i < length; i ++) {
+           counter[frase.charAt(i)] ++;
+       } for ( i = 0; i < 256; i ++ ) {
+           if ( counter[i] != 0) {
+               System.out.println((char) i + ": " + counter[i]);
+           }
+        }
     }
 
 
@@ -387,7 +400,7 @@ public  class App {
        // app.m1InvertirString("La Estrategia del Caracol");
         app.m1InvertirString("El Oso come Miel");
         app.m2IsCapicua(96869);
-        app.m3CountCharacterTimes("casacasa");
+       // app.m3CountCharacterTimes("casacasa");
         app.m4CountCharacterTimes("palabra");
 
     }
