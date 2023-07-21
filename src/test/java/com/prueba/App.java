@@ -440,7 +440,7 @@ public  class App {
         }  System.out.println("---");
     }
 
-    private void mCCountCharacterTimes(String cuenta) {
+ /*   private void mCCountCharacterTimes(String cuenta) {
         int i , length, counter[] = new int [256];
         length = cuenta.length();
 
@@ -450,6 +450,19 @@ public  class App {
             if ( counter[i] != 0 ) {
 
                 System.out.println((char) i + ":" + counter[i]);
+            }
+        }
+    }*/
+
+    private void mCCountCharacterTimes(String word) {
+        int i, lenght, counter[] = new int[256];
+        lenght = word.length();
+
+        for ( i = 0; i < lenght; i ++ ) {
+            counter[word.charAt(i)] ++;
+        } for( i = 0; i < 256; i ++ ) {
+            if ( counter[i] != 0 ) {
+                System.out.println((char) i + ": " + counter[i]);
             }
         }
     }
@@ -467,7 +480,7 @@ public  class App {
         app.m2IsCapicua(96869);
        // app.m3CountCharacterTimes("casacasa");
         app.m4CountCharacterTimes("amarilla");
-        app.mCCountCharacterTimes("ojo por ojo");
+        app.mCCountCharacterTimes(" ojo por ojo ");
 
 
     }
