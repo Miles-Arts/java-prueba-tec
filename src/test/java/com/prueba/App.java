@@ -25,6 +25,10 @@ public  class App {
     }*/
 
     //Invertir un String
+    //Invertir un String
+    //Invertir un String
+    //Invertir un String
+    //Invertir un String
 //    public static void m1InvertirString(String text) {
      /*   String[] array = text.split("");
         StringBuilder newText = new StringBuilder();
@@ -371,6 +375,10 @@ public  class App {
         }
     }
 
+    //casa
+    //casa
+    //casa
+    //casa
     //casa
     //c=1, a=2, s=1,
 
