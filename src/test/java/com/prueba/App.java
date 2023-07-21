@@ -2,6 +2,7 @@ package com.prueba;
 
 import org.jetbrains.annotations.NotNull;
 
+import javax.management.StringValueExp;
 import java.util.ArrayList;
 
 
@@ -194,7 +195,7 @@ public  class App {
          System.out.println(textReN);
      }*/
 
-    private void m1InvertirString(String palabras) {
+   /* private void m1InvertirString(String palabras) {
 
         String[] palabraTexto = palabras.split("");
         StringBuilder palabraReverse = new StringBuilder();
@@ -204,8 +205,23 @@ public  class App {
             palabraReverse.append(palabraTexto[i - 1]);
         }
         System.out.println(palabraReverse);
+    }*/
+
+    private void m1InvertirString(String reverso) {
+        String[] textoReverso = reverso.split("");
+        StringBuilder newTextoReverso =  new StringBuilder();
+
+        for ( int i =  textoReverso.length; i > 0 ; i --) {
+
+            newTextoReverso.append(textoReverso[ i - 1]);
+
+        } System.out.println(newTextoReverso);
     }
 
+    private void mMInvertirString(String palabra) {
+        String fraseRevez = new StringBuilder(palabra).reverse().toString();
+        System.out.println(fraseRevez);
+    }
 
     //CAPICUA
     //CAPICUA
@@ -332,7 +348,7 @@ public  class App {
     }*/
 
 
-    private void m2IsCapicua(int numero) {
+/*    private void m2IsCapicua(int numero) {
 
         String numeroCapi = String.valueOf(numero);
         String numeroCua = new StringBuilder(numeroCapi).reverse().toString();
@@ -341,6 +357,17 @@ public  class App {
             System.out.println("Capicua");
         } else {
             System.out.println("No Capicua");
+        }
+    }*/
+
+    private void m2IsCapicua(int numero) {
+        String capi = String.valueOf(numero);
+        String capicua = new StringBuilder(capi).reverse().toString();
+
+        if ( capicua.equals(capicua) ) {
+            System.out.println("Capicua");
+        } else {
+            System.out.println("Mo Capicua");
         }
     }
 
@@ -377,7 +404,7 @@ public  class App {
             }
     }*/
 
-    private void m4CountCharacterTimes(String frase) {
+   /* private void m4CountCharacterTimes(String frase) {
        int  i, length, counter[] = new int [256];
        length = frase.length();
 
@@ -387,6 +414,21 @@ public  class App {
            if ( counter[i] != 0) {
                System.out.println((char) i + ": " + counter[i]);
            }
+        }
+    }*/
+
+    private void m4CountCharacterTimes(String texto) {
+
+        int i, length, counter[] = new int [256];
+        length = texto.length();
+
+        for ( i =  0; i < length; i ++  ) {
+
+            counter[texto.charAt(i)] ++;
+        } for ( i = 0; i < 256; i ++ ) {
+            if ( counter[i] != 0 ) {
+                System.out.println((char) i + ": " + counter[i]);
+            }
         }
     }
 
@@ -399,9 +441,10 @@ public  class App {
         //app.m1InvertirString("aprender");
        // app.m1InvertirString("La Estrategia del Caracol");
         app.m1InvertirString("El Oso come Miel");
+        app.mMInvertirString("Miel");
         app.m2IsCapicua(96869);
        // app.m3CountCharacterTimes("casacasa");
-        app.m4CountCharacterTimes("palabra");
+        app.m4CountCharacterTimes("amarilla");
 
     }
 }
