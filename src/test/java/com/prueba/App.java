@@ -454,6 +454,7 @@ public  class App {
         }
     }*/
 
+
     private void mCCountCharacterTimes(String word) {
         int i, lenght, counter[] = new int[256];
         lenght = word.length();
