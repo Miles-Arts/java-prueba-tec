@@ -222,6 +222,8 @@ public  class App {
         } System.out.println(newTextoReverso);
     }
 
+
+
     private void mMInvertirString(String palabra) {
         String fraseRevez = new StringBuilder(palabra).reverse().toString();
         System.out.println(fraseRevez);
