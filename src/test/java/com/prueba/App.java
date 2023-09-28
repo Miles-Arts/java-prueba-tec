@@ -211,17 +211,28 @@ public  class App {
         System.out.println(palabraReverse);
     }*/
 
-    private void m1InvertirString(String reverso) {
-        String[] textoReverso = reverso.split("");
-        StringBuilder newTextoReverso =  new StringBuilder();
+//    private void m1InvertirString(String reverso) {
+//        String[] textoReverso = reverso.split("");
+//        StringBuilder newTextoReverso =  new StringBuilder();
+//
+//        for ( int i =  textoReverso.length; i > 0 ; i --) {
+//
+//            newTextoReverso.append(textoReverso[ i - 1]);
+//
+//        } System.out.println(newTextoReverso);
+//    }
 
-        for ( int i =  textoReverso.length; i > 0 ; i --) {
+    private void m1InvertirString(String reverso) {
+
+        String[] textoReverso = reverso.split("");
+        StringBuilder newTextoReverso = new StringBuilder();
+
+        for (int i = textoReverso.length; i > 0 ; i -- ) {
 
             newTextoReverso.append(textoReverso[ i - 1]);
 
         } System.out.println(newTextoReverso);
     }
-
 
 
     private void mMInvertirString(String palabra) {
